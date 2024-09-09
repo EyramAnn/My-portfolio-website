@@ -41,7 +41,22 @@ body{
     cursor: pointer;
     display: none; 
 }
-  
+
+/* .close {
+    color: black;
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+   */
+
+.burger.active {
+    display: block;
+}
+
+.close.active {
+    display: block;
+}
 
 .nav-links {
     list-style: none;
@@ -134,15 +149,15 @@ hr{
 }
 @media (max-width: 700px) {
     .nav-links {
-        background-color: rgba(71, 71, 69, 0.3);
+        background-color: #1a1a1a;
         display: none;
         flex-direction: column;
         position: absolute;
         top: 56px;
         right: 0;
-        width: 20%; 
-        text-align: right;
-        padding-right: 2rem; 
+        width: 100%; 
+        text-align: center;
+        padding-right: 1rem; 
     }
 
     .nav-links.active {
